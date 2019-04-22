@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/LS.css"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-default cgj-nav">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand cgj-logo" href="#">
+      	<img src="../img/logo (1).png"/>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right cgj-left">
+        <li class="cgj-che"><a href="#">车型总览</a>
+        	<span class="nav-arrow icon-up4 cgj-hidden" style="display: none;"><img src="../img/箭头-上.png"/></span>
+        	<div class="container cgj-dropdown" style="right: -851%;display: none;">
+        		<div class="col-md-7 cgj-7">
+        			<ul class="cgj-dropdown-left">
+        				<li class="long">
+        					<div class="long-box">
+        						<a href="http://www.lexus.com.cn/models/ct" class="cartype" onclick="stm_clicki('send', 'event', '全站导航栏按钮', '点击', '全站导航栏-CT车型');"> 
+        							<strong class="lh-700">CT</strong>
+                                <img src="../img/ct-model-400x160.png" alt="">
+                                <p class="title">紧凑型豪华两厢车</p>
+                                <p class="price">建议售价215,000元起</p>
+                            </a>
+        					</div>
+        				</li>
+        				
+        				<li class="short">
+	        				<a href="http://www.lexus.com.cn/models/is" onclick="stm_clicki('send', 'event', '全站导航栏按钮', '点击', '全站导航栏-IS车型');"> 
+	        					<strong class="lh-700">IS</strong>
+	                            <img src="../img/is-model-400x160.png" alt="">
+	                            <p class="title">中型豪华运动轿车</p>
+	                            <p class="price">建议售价304,000元起</p> 
+	                        </a>
+        				</li>
+        				
+        				<li class="short">
+	                        <a href="http://www.lexus.com.cn/models/es" onclick="stm_clicki('send', 'event', '全站导航栏按钮', '点击', '全站导航栏-ES车型');">
+	                            <strong class="lh-700">ES</strong>
+	                            <img src="../img/es-model-400x160.png" alt="">
+	                            <p class="title">中大型豪华行政级轿车</p>
+	                            <p class="price">建议售价279,000元起</p>
+	                        </a>
+	                    </li>
+	                    
+	                    <li class="short">
+                        <a href="http://www.lexus.com.cn/models/gs" onclick="stm_clicki('send', 'event', '全站导航栏按钮', '点击', '全站导航栏-GS车型');">
+                            <strong class="lh-700">GS</strong>
+                            <img src="../img/gs-model-181120-400x160.png" alt="">
+                            <p class="title">中大型豪华运动轿车</p>
+                            <p class="price">建议售价438,000元起</p>
+                        </a>
+                    </li>
+                    
+                    <li class="short">
+                        <a href="http://www.lexus.com.cn/models/ls" onclick="stm_clicki('send', 'event', '全站导航栏按钮', '点击', '全站导航栏-LS车型');">
+                            <strong class="lh-700">LS</strong>
+                            <img src="../img/ls-model-400x160.png" alt="">
+                            <p class="title">旗舰级豪华轿车</p>
+                            <p class="price">建议售价824,000元起</p>
+                        </a>
+                    </li>
+                    
+                    <li class="short">
+                        <a href="http://www.lexus.com.cn/models/new_ux" onclick="stm_clicki('send', 'event', '全站导航栏按钮', '点击', '全站导航栏-UX车型');">
+                            <strong class="lh-700">UX</strong>
+                            <img src="../img/ux-model-400x160.png" alt="">
+                            <p class="title">豪华都市SUV</p>
+                            <p class="price">建议售价268,000元起</p>
+                        </a>
+                    </li>
+                    
+                    <li class="short">
+                        <a href="http://www.lexus.com.cn/models/nx" onclick="stm_clicki('send', 'event', '全站导航栏按钮', '点击', '全站导航栏-NX车型');">
+                            <strong class="lh-700">NX</strong>
+                            <img src="../img/nx-model-400x160.png" alt="">
+                            <p class="title">中型豪华SUV</p>
+                            <p class="price">建议售价298,000元起</p>
+                        </a>
+                    </li>
+                    
+                    <li class="short">
+                        <a href="http://www.lexus.com.cn/models/rx" onclick="stm_clicki('send', 'event', '全站导航栏按钮', '点击', '全站导航栏-RX车型');">
+                            <strong class="lh-700">RX</strong>
+                            <img src="../img/rx-model-400x160.png" alt="">
+                            <p class="title">中大型豪华SUV</p>
+                            <p class="price">建议售价390,000元起</p>
+                        </a>
+                    </li>
+                    
+                    <li class="short">
+                        <a href="http://www.lexus.com.cn/models/lx" onclick="stm_clicki('send', 'event', '全站导航栏按钮', '点击', '全站导航栏-LX车型');">
+                            <strong class="lh-700">LX</strong>
+                            <img src="../img/lx-model-400x160.png" alt="">
+                            <p class="title">全尺寸豪华SUV</p>
+                            <p class="price">建议售价1,291,000元起</p>
+                        </a>
+                    </li>
+                    
+                    <li class="short">
+                      <a href="http://www.lexus.com.cn/models/rc" onclick="stm_clicki('send', 'event', '全站导航栏按钮', '点击', '全站导航栏-RC车型');">
+                          <strong class="lh-700">RC</strong>
+                          <img src="../img/rc-model-400x160.png" alt="">
+                          <p class="title">中型豪华轿跑车</p>
+                          <p class="price">建议售价455,000元起</p>
+                      </a>
+                    </li>
+                    
+                    <li class="long-one">
+        					<div class="long-o">
+        						<a href="http://www.lexus.com.cn/models/lc" onclick="stm_clicki('send', 'event', '全站导航栏按钮', '点击', '全站导航栏-LC车型');">
+                              <strong class="lh-700">LC</strong>
+                              <img src="../img/lc-model-400x160.png" alt="">
+                              <p class="title">旗舰级豪华GT轿跑</p>
+                              <p class="price">建议售价1,179,000元起</p>
+                          </a>
+        					</div>
+        				</li>
+        				
+        				<li class="long-two">
+        					<div class="long-t">
+        						<a href="http://www.lexus.com.cn/models/ct" class="cartype" onclick="stm_clicki('send', 'event', '全站导航栏按钮', '点击', '全站导航栏-CT车型');"> 
+        							<strong class="lh-700">YACHT</strong>
+                                <img src="../img/yacht-model-400x160.png" alt="">
+                                <p class="title">豪华游艇</p>
+                                </a>
+        					</div>
+        				</li>
+        			</ul>
+        		</div>
+        		
+        		<div class="col-md-5 cgj-5">
+        			<ul class="cgj-dropdown-right">
+        			<li class="magnifier">
+                        <a href="http://www.lexus.com.cn/models/filter">
+                            <strong class="lh-700">车型筛选</strong>
+                            <img src="../img/index-dropdownmenu_new-1-1-920x560.jpg!m482x369.jpg"/>
+                        </a>
+                    </li>
+                    
+                    <li class="box-1-2">
+                  		<a href="http://www.lexus.com.cn/models/filter">
+                            <strong class="lh-700">豪华游艇</strong>
+                            <img src="../img/bottomImg-190119.jpg!m241x368.jpg"/>
+                        </a>
+                    <li class="box-1-2">
+                    	<a href="http://www.lexus.com.cn/models/filter">
+                            <strong class="lh-700">豪华游艇</strong>
+                            <img src="../img/index-dropdownmenu_new-1-3-460x560.jpg!m241x368.jpg"/>
+                        </a>
+                    </li>
+        			</ul>
+        		</div>
+        		
+        	</div>
+        </li>
+        <li class="cgj-che"><a href="#">品牌天地</a>
+        	<span class="nav-arrow icon-up4 cgj-hidden" style="display: none;">
+        		<img src="../img/箭头-上.png"/>
+        	</span>
+        	<div class="container cgj-dropdown" style="height: 561px; display: none;">
+        		<div class="col-md-5 cgj-5-history">
+        			<ul class="history" style="height: 561px;">
+        				<li class="history-li">
+        					<a href="http://www.lexus.com.cn/brand/history">品牌历史</a>
+        				</li>
+        				<li class="history-li">
+        					<a href="http://www.lexus.com.cn/brand/takumi">匠人匠心</a>
+        				</li>
+        				<li class="history-li">
+        					<a href="http://www.lexus.com.cn/brand/l_finesse">设计理念</a>
+        				</li>
+        				<li class="history-li">
+        					<a href="http://www.lexus.com.cn/hybrid/yet2018">兼·融之道</a>
+        				</li>
+        				<li class="history-li">
+        					<a href="http://www.lexus.com.cn/brand/ml">至纯之音</a>
+        				</li>
+        				<li class="history-li">
+        					<a href="http://www.lexus.com.cn/brand/eco_thinking">环保理念</a>
+        				</li>
+        				<li class="history-li">
+        					<a href="http://www.lexus.com.cn/concept_cars">概念车</a>
+        				</li>
+        				<li class="history-li">
+        					<a href="http://www.lexus.com.cn/concept_cars">全球品牌活动</a>
+        					</li>
+        					<ul class="dropdown-menu-item-ul">
+                            <li><a href="http://www.lexus.com.cn/brand/brand_pursuits/magazine">雷克萨斯品牌杂志</a></li>
+                            <li><a href="http://www.lexus.com.cn/brand/brand_pursuits/amazing_in_motion">雷克萨斯全球品牌广告</a></li>
+                            <li><a href="http://www.lexus.com.cn/brand/brand_pursuits/lexus_design_award">雷克萨斯全球设计大奖</a></li>
+                            <li><a href="http://www.lexus.com.cn/brand/brand_pursuits/intersect">雷克萨斯品牌体验空间INTERSECT</a></li>
+                            <li><a href="http://www.lexus.com.cn/brand/brand_pursuits/lexus_short_films">雷克萨斯全球微电影</a></li>
+                        </ul>
+        				
+        			</ul>
+        		</div>
+        		
+        		<div class="col-md-7 cgj-7-show">
+        			<div class="dropdown-menu-content show">
+                    <div class="dropdown-menu-desc">
+                        <h4>品牌历史</h4>
+                        <p>回眸岁月，雷克萨斯前行之路上成就不止：</p>
+                        <p>所有的一切，都诉说着雷克萨斯历日旷久的斐然业绩，更预言着品牌未来的前进方向。</p>
+                       
+                    </div>
+                    <div class="dropdown-menu-img">
+                        <img src="../img/index-dropdownmenu-2-1-1354x810.jpg!m677x405.jpg"/>
+                    </div>
+                </div>
+        		</div>
+        		
+        	</div>
+        </li>
+        <li class="cgj-che"><a href="#">智混动</a>
+        	<span class="nav-arrow icon-up4 cgj-hidden" style="display: none;">
+        		<img src="../img/箭头-上.png"/>
+        	</span>
+        	<div class="container cgj-dropdown" style="height: 561px; display: none;">
+        		<div class="col-md-5 cgj-5-zhi">
+        			<ul class="dropdown-menu-nav">
+                    <li class="dropdown-menu-nav-item phone-max">
+                    	<a href="http://www.lexus.com.cn/hybrid">智·混动</a>
+                    </li>
+                </ul>
+                </div>
+                
+                <div class="col-md-7 cgj-7-zhi">
+                	<div class="dropdown-menu-content show">
+                    <div class="dropdown-menu-desc">
+                        <h4>智·混动</h4>
+                        <p>智，在于兼顾自我与社会；在于坐享时代的巅峰；在于深感速度的激情；在于纯净澎湃的动力。</p>
+                    </div>
+                    <div class="dropdown-menu-img">
+                        <img src="../img/index-dropdownmenu-4-2-180502-1354x810.jpg"/>
+                    </div>
+                </div>
+                </div>
+           </div>
+        </li>
+        
+        
+        <li class="cgj-che"><a href="#">F高性能系列</a>
+        	<span class="nav-arrow icon-up4 cgj-hidden" style="display: none;">
+        		<img src="../img/箭头-上.png"/>
+        	</span>
+        	<div class="container cgj-dropdown" style="height: 561px;display: none;">
+        		
+            <div class="col-md-5 cgj-5-F">
+                <ul class="dropdown-menu-nav">
+                    <li class="dropdown-menu-nav-item active phone-max">
+                    	<a href="http://www.lexus.com.cn/f_portfolio">F高性能系列</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-7 cgj-7-F">
+                <div class="dropdown-menu-content show">
+                    <div class="dropdown-menu-desc">
+                        <h4>F高性能系列</h4>
+                        <p>F的精神，由赛道传奇延续至平素驾控。无论何时何地，酣畅的驾控快感从无休止。</p>
+                    </div>
+                    <div class="dropdown-menu-img">
+                       <img src="../img/index-dropdownmenu-5-1-1354x810.jpg!m677x405.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </li>
+     
+     
+     
+        <li class="cgj-che"><a href="#">车主服务</a>
+        	<span class="nav-arrow icon-up4 cgj-hidden" style="display: none;">
+        		<img src="../img/箭头-上.png"/>
+        	</span>
+        	<div class="container cgj-dropdown"style="height: 561px;display: none; ">
+        		<div class="col-md-5 cgj-5-shouhou">
+        			<ul class="dropdown-menu-nav">
+                    <li class="dropdown-menu-nav-item phone-max"><a href="http://www.lexus.com.cn/service/lexus_service">售后服务</a></li>
+                    <li class="dropdown-menu-nav-item phone-max"><a href="http://www.lexus.com.cn/e-LEXUS_CLUB_app">e-LEXUS CLUB智能手机应用</a></li>
+                    <li class="dropdown-menu-nav-item phone-max"><a href="http://www.lexus.com.cn/service/lexus_g_book">雷克萨斯智能副驾G-BOOK</a></li>
+                    <li class="dropdown-menu-nav-item phone-max"><a href="http://www.lexus.com.cn/mobile_connection">雷克萨斯手机互联</a></li>
+                    <li class="dropdown-menu-nav-item phone-max"><a href="http://www.lexus.com.cn/accessories">雷克萨斯汽车精品</a></li>
+                    <li class="dropdown-menu-nav-item phone-max"><a href="http://www.lexus.com.cn/lexus_collection">雷克萨斯生活精品</a></li>
+                    <li class="dropdown-menu-nav-item phone-max"><a href="http://www.lexus.com.cn/service_qa">雷克萨斯顾客常见问与答</a></li>
+                </ul>
+        		</div>
+        		
+        		<div class="col-md-7 cgj-7-shouhou">
+        			<div class="dropdown-menu-content show">
+                    <div class="dropdown-menu-desc">
+                        <h4>售后服务</h4>
+                        <p>雷克萨斯售后服务，全心投入，只为您全心满意。</p>
+                    </div>
+                    <div class="dropdown-menu-img">
+                       <img src="../img/index-dropdownmenu-3-1-1354x810.jpg"/>
+                    </div>
+                </div>
+        		</div>
+        		
+        	</div>
+        </li>
+        <li class="cgj-che"><a href="#">新闻资讯</a>
+        	<span class="nav-arrow icon-up4 cgj-hidden" style="display: none;" >
+        		<img src="../img/箭头-上.png"/>
+        	</span>
+        	<div class="container cgj-dropdown"style="height: 561px;display: none;">
+        		<div class="col-md-5 cgj-5-xinwen">
+        			<ul class="dropdown-menu-nav">
+                    <li class="dropdown-menu-nav-item phone-max"><a href="http://www.lexus.com.cn/news">新闻资讯</a></li>
+                    
+                </ul>
+        		</div>
+        		<div class="col-md-7 cgj-7-xinwen">
+        			<div class="dropdown-menu-content show">
+                    <div class="dropdown-menu-desc">
+                        <h4>新闻资讯</h4>
+                        <p>在这里您可以浏览关于雷克萨斯的所有资讯及优惠活动。</p>
+                    </div>
+                    <div class="dropdown-menu-img">
+                       <img src="../img/index-dropdownmenu-6-1-1354x810.jpg!m677x405.jpg"/>
+                    </div>
+                </div>
+        		</div>
+        	</div>
+        </li>
+        <li class="cgj-che"><a href="#">查询经销商</a></li>
+        <li class="cgj-che"><a href="#">预约试驾</a></li>
+        <li class="nav-star empty" id="nav-star">
+        <a href="javascript:" class="outLink"><span class="lexus-icon icon-star-empty"></span></a>
+        <span class="star-num"><img style="width: 18px; height: 18px;" src="../img/五角星.png"/></span>
+    </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+		
+	<div class="container-fluid cgj-top">
+		<div class="container cgj-LS">
+			<h2 class="model-title">LS</h2>
+			<ul class="cgj-gailan">
+				<li>
+					<a href="/models/ls/" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型头部导航栏-概览');">概览</a>
+				</li>
+				<li>
+				<a href="/models/ls/exterior" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型头部导航栏-外观');">外观</a>
+			    </li>
+			    <li>
+				<a href="/models/ls/interior" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型头部导航栏-内饰');">内饰</a>
+			    </li>
+			    <li>
+				<a href="/models/ls/power" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型头部导航栏-性能');">性能</a>
+			    </li>
+			    <li>
+				<a href="/models/ls/safety" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型头部导航栏-安全');">安全</a>
+			    </li>
+			    <li>
+				<a href="/models/ls/spec" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型头部导航栏-配置与价格');">配置与价格</a>
+			    </li>
+			    <li>
+				<a href="/models/ls/360" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型头部导航栏-360赏车');">360赏车</a>
+			    </li>
+			    <li>
+			    	<a href="/models/ls/gallery" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型头部导航栏-图片与视频');">图片与视频</a>
+				</li>
+				<li>
+					<a href="https://www.lexus.com.cn/test_drive?car=LS" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型头部导航栏-试驾LS');">试驾LS</a>
+                </li>
+                <li>
+				<a href="https://www.lexus.com.cn/service_qa" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型头部导航栏-相关咨询LS');">车辆相关咨询</a>
+			    </li>
+			</ul>
+		</div>
+	</div>	
+		
+	<div id="carousel-example-generic" class="carousel slide cgj-mid" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators cgj-ol">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="../img/ls-overview-kv-1225-3-2880x1480.jpg" alt="...">
+      <div class="container cgj-tanxiang">
+      	<h3>探享新豪华艺术</h3>
+      	<p class="cgj-qijian">
+		旗舰级豪华轿车 雷克萨斯LS
+		<br>
+		厂商建议零售价82.4万元起
+		</p>
+		<p class="hidden-xs">
+		  <span>扫码睿赏新豪华艺术论</span>
+		</p>
+		<p> 
+			<a class="visible-xs " href="http://2018lslc.lexus.com.cn/" target="_blank" onclick="stm_clicki('send', 'event', 'LS车型页', '点击', '点击睿赏新豪华艺术论');" style="color:#fff">点击睿赏新豪华艺术论<span class="lexus-icon icon-right1"></span></a>
+			 <img src="../img/lslc-list-180108-qr.jpg" style="width:100px;height:100px;">/>
+		 </p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../img/ls-overview-kv-1225-2-2880x1480.jpg" alt="...">
+      <div class="container cgj-tanxiang">
+      	<h3>探享新豪华艺术</h3>
+      	<p class="cgj-qijian">
+		旗舰级豪华轿车 雷克萨斯LS
+		<br>
+		厂商建议零售价82.4万元起
+		</p>
+		<p class="hidden-xs">
+		  <span>扫码睿赏新豪华艺术论</span>
+		</p>
+		<p> 
+			<a class="visible-xs " href="http://2018lslc.lexus.com.cn/" target="_blank" onclick="stm_clicki('send', 'event', 'LS车型页', '点击', '点击睿赏新豪华艺术论');" style="color:#fff">点击睿赏新豪华艺术论<span class="lexus-icon icon-right1"></span></a>
+			 <img src="../img/lslc-list-180108-qr.jpg" style="width:100px;height:100px;">/>
+		 </p>
+      </div>
+    </div>
+   
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>	
+		
+		
+	<div class="container-fluid cgj-C">
+		<div class="container cgj-G">
+			<div class="col-md-12 cgj-model">
+				<h3 class="model-show-title">
+						空间与流线兼得，是对美学的永恒追求
+				</h3>
+				<div class="col-md-offset-2 col-md-8 cgj-model-show">
+				 <p class="ls-center">
+					昨天，设计是让你看见美
+					<br>
+					今天，设计是带你预见美
+				 </p>
+				 <p class="rang">
+					让空间艺术以另一种形式呈现，不取舍，不妥协。全新LS外观与空间不分左右，将极具未来感的流线车身和舒适空间完美合一，出色诠释雷克萨斯“兼得”哲学论。
+				 </p>
+				 <div class="col-md-12 model-show-more">
+						<a href="/models/ls/exterior" onclick="stm_clicki('send', 'event', 'ls概览页', '点击', '探索外观');">探索外观
+							<span class="icon-right1">
+								<img src="../img/箭头.png"/>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-12 cgj-12">
+			<img src="../img/index-kv-ls-190108-2880x1480.jpg"/>
+		</div>
+	</div>	
+		
+	<div class="container-fluid cgj-C">
+		<div class="container cgj-G">
+			<div class="col-md-12 cgj-model">
+				<h3 class="model-show-title">
+						凝聚时光之美，是匠心对空间的解读
+				</h3>
+				<div class="col-md-offset-2 col-md-8 cgj-model-show">
+						<p class="ls-center">
+							昨天，空间是一种取舍
+							<br>
+							今天，空间是心容天地的格局
+						</p>
+						<p class="rang">
+
+							越是微不足道的细节，越是值得倾注情感与时间，全新LS继承雷克萨斯“凝聚时光之设计”的哲学理念，用时间慢慢雕琢明暗对比的凌光切子衬鹤羽折布*，在博大的空间之内，将时间沁入细微之处，举手间触摸时光之美。
+						</p>
+					</div>
+				<div class="col-md-offset-2 col-md-8 rang">
+							*部分车型配备，敬请参阅配置表。
+					</div>
+					<div class="col-md-12 model-show-more">
+						<a href="/models/ls/interior" onclick="stm_clicki('send', 'event', 'ls概览页', '点击', '探索内饰');">探索内饰
+							<span class="lexus-icon icon-right1">
+								<img src="../img/箭头.png"/>
+							</span>
+						</a>
+					</div>
+			</div>
+		</div>
+		<div class="col-md-12 cgj-12">
+			<img src="../img/ls-overview-2-1225-2880x1480.jpg!m1583x813.jpg"/>
+		</div>
+	</div>	
+		
+		<div class="container-fluid cgj-C">
+		<div class="container cgj-G">
+			<div class="col-md-12 cgj-model">
+				<h3 class="model-show-title">
+						更具人性的科技，令驾驭沉浸其中
+					</h3>
+				<div class="col-md-offset-2 col-md-8 cgj-model-show">
+						<p class="ls-center">
+							昨天，性能是追逐速度之快
+							<br>
+							今天，性能是懂得驾驶之美
+						</p>
+						<p class="rang">
+                                                                              驾驭并非一种技能，而是在移动中捕捉人性的温度与感受力。全新LS 500h搭载雷克萨斯最新多级全混动科技，令驾驭游刃于平顺与静谧之间，人性与科技由此相得益彰。
+						</p>
+					</div>
+				
+					<div class="col-md-12 model-show-more">
+						<a href="/models/ls/power" onclick="stm_clicki('send', 'event', 'ls概览页', '点击', '探索性能');">探索性能
+							<span class="lexus-icon icon-right1">
+								<img src="../img/箭头.png"/>
+							</span>
+						</a>
+					</div>
+			</div>
+		</div>
+		<div class="col-md-12 cgj-12">
+			<img src="../img/ls-overview-3-1225-2880x1480.jpg!m1583x813.jpg"/>
+		</div>
+	</div>	
+		
+	<div class="container-fluid cgj-C">
+		<div class="container cgj-G">
+			<div class="col-md-12 cgj-model">
+				<h3 class="model-show-title">
+						预知未见的前方，是对安全的敬畏
+					</h3>
+				<div class="col-md-offset-2 col-md-8 cgj-model-show">
+						<p class="ls-center">
+							昨天，安全是对物质的依赖
+							<br>
+							今天，安全是远见精神的共鸣
+						</p>
+						<p class="rang">
+                雷克萨斯智能安全系统LSS+*，以一种更具预见性的安全辅助系统组合方式，高效整合了预碰撞安全系统PCS、自适应巡航控制系统ACC、车道偏离警示系统LDA、远光灯自动控制系统AHB（或2段式远光灯自适应控制系统AHS）一系列安全辅助装置，防患于未然，提供更全方位的安全辅助，让您尽享驾驶乐趣。
+						</p>
+					</div>
+				<div class="col-md-offset-2 col-md-8 rang">
+							*该套件为安全辅助系统，请遵守当地法律法规，注意行车安全。其各项功能均在一定速度区间内适用，详情请参阅《用户手册》。
+					</div>
+					<div class="col-md-12 model-show-more">
+						<a href="/models/ls/safety" onclick="stm_clicki('send', 'event', 'ls概览页', '点击', '探索安全');">探索安全
+							<span class="lexus-icon icon-right1">
+								<img src="../img/箭头.png"/>
+							</span>
+						</a>
+					</div>
+			</div>
+		</div>
+		<div class="col-md-12 cgj-12">
+			<img src="../img/ls-overview-4-1225-2880x1480.jpg!m1583x813.jpg"/>
+		</div>
+	</div>	
+		<div class="container">
+			<div class="col-md-12">
+				<div class="model-show-note">
+				*官网所示图片及视频仅供展示广告创意，请以中国地区实际销售车辆为准，实际上路行驶时请遵循当地法律法规。
+			</div>
+			</div>
+		</div>
+		
+		
+		
+		
+			<div class="container">
+				<div class="row model-other">
+				  <div class="col-xs-6 col-sm-6 col-md-3 cgj-J">
+			        <div class="model-other-icon">
+			        	<img src="../img/使用手册.png"/>
+			        </div>
+			           <strong class="h4">车型手册</strong>
+			          <p>下载车型手册获得更多产品信息，同时也可以打印后阅读。</p>
+			           <a href="/sites/all/themes/lexus/files/LS_Brochure.pdf" target="_blank" class="more" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型底部ICON工具-下载手册');">下载手册
+			            <span class="lexus-icon icon-right1">
+			            	<img src="../img/箭头.png"/>
+			            </span>
+			           </a>
+			     </div>
+			     
+			     <div class="col-xs-6 col-sm-6 col-md-3 cgj-J">
+			        <div class="model-other-icon">
+			        	<img src="../img/车轮.png"/>
+			        </div>
+			          <strong class="h4">雷克萨斯汽车精品</strong>
+			          <p>您可以用个性化的原厂改装配件，定制心目中的梦想座驾。</p>
+			           <a href="/sites/all/themes/lexus/files/LS_Brochure.pdf" target="_blank" class="more" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型底部ICON工具-下载手册');">挑选配件
+			            <span class="lexus-icon icon-right1">
+			            	<img src="../img/箭头.png"/>
+			            </span>
+			           </a>
+			     </div>
+			     
+			     <div class="col-xs-6 col-sm-6 col-md-3 cgj-J">
+			        <div class="model-other-icon">
+			        	<img src="../img/新闻.png"/>
+			        </div>
+			          <strong class="h4">车型新闻</strong>
+			          <p>在这里，您可以浏览到所有与该款车型有关的新闻资讯。</p>
+			           <a href="/sites/all/themes/lexus/files/LS_Brochure.pdf" target="_blank" class="more" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型底部ICON工具-下载手册');">浏览新闻
+			            <span class="lexus-icon icon-right1">
+			            	<img src="../img/箭头.png"/>
+			            </span>
+			           </a>
+			     </div>
+			     
+			     <div class="col-xs-6 col-sm-6 col-md-3 cgj-J">
+			        <div class="model-other-icon">
+			        	<img src="../img/定位.png"/>
+			        </div>
+			          <strong class="h4">经销商</strong>
+			          <p>前往经销商店，您将获得雷克萨斯提供的尊享服务。</p>
+			           <a href="/sites/all/themes/lexus/files/LS_Brochure.pdf" target="_blank" class="more" onclick="stm_clicki('send', 'event', 'LS车型页面按钮', '点击', 'LS车型底部ICON工具-下载手册');">查询经销商
+			            <span class="lexus-icon icon-right1">
+			            	<img src="../img/箭头.png"/>
+			            </span>
+			           </a>
+			     </div>
+			     
+			  </div>
+			</div>
+		
+		
+		<div class="container-fluid cgj-bottom">
+    	<div class="container cgj-bot">
+    		<div class="row">
+    			<div class="col-md-2">
+                <dl>
+                    <dt class="col-md-12 cgj-dt">
+                    	<a href="http://www.lexus.com.cn/models/overview">车型总览</a>
+                    </dt>
+                    <dd class="col-md-4">
+                        <a href="http://www.lexus.com.cn/models/ct">CT</a>
+                    </dd>
+                    <dd class="col-md-8">
+                        <a href="http://www.lexus.com.cn/models/lx">LX</a>
+                    </dd>
+                    <dd class="col-md-4">
+                        <a href="http://www.lexus.com.cn/models/is">IS</a>
+                    </dd>
+                    <dd class="col-md-8">
+                        <a href="http://www.lexus.com.cn/models/rc">RC</a>
+                    </dd>
+                    <dd class="col-md-4">
+                        <a href="http://www.lexus.com.cn/models/es">ES</a>
+                    </dd>
+                    <dd class="col-md-8">
+                       <a href="http://www.lexus.com.cn/models/lc">LC</a>
+                    </dd>
+                    <dd class="col-md-4">
+                        <a href="http://www.lexus.com.cn/models/gs">GS</a>
+                    </dd>
+                    <dd class="col-md-8">
+                       <a href="http://www.lexus.com.cn/yachtnew">YACHT</a>
+                    </dd>
+                    <dd class="col-md-4">
+                        <a href="http://www.lexus.com.cn/models/ls">LS</a>
+                    </dd>
+                    <dd class="col-md-8">
+                       <a href="http://www.lexus.com.cn/yachtnew">豪华游艇</a>
+                    </dd>
+                    <dd class="col-md-4">
+                        <a href="http://www.lexus.com.cn/models/new_ux">UX</a>
+                    </dd>
+                    <dd class="col-md-8">
+                       <a href="http://www.lexus.com.cn/models/filter">车型筛选</a>
+                    </dd>
+                    <dd class="col-md-4">
+                        <a href="http://www.lexus.com.cn/models/nx">NX</a>
+                    </dd>
+                    
+                    <dd class="col-md-8">
+                        <a href="http://www.lexus.com.cn/financial_plan">金融服务</a>
+                    </dd>
+                    <dd class="col-md-4">
+                        <a href="http://www.lexus.com.cn/models/rx">RX</a>
+                    </dd>
+                    
+                    <dd class="col-md-8">     
+                    </dd>
+                </dl>
+            </div>
+            
+            <div class="col-md-2">
+                <dl>
+                    <dt class="cgj-dt">
+                    	<a href="http://www.lexus.com.cn/brand">品牌天地</a>
+                    </dt>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/brand/history">品牌历史</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/brand/takumi">匠人匠心</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/brand/l_finesse">设计理念</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/hybrid/yet2018">兼·融之道</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/brand/ml">至纯之音</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/brand/eco_thinking">环保理念</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/concept_cars">概念车</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/brand/brand_pursuits/magazine">雷克萨斯品牌杂志</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/brand/brand_pursuits/amazing_in_motion">雷克萨斯全球品牌广告</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/brand/brand_pursuits/lexus_design_award">雷克萨斯全球设计大奖</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/brand/brand_pursuits/intersect">雷克萨斯品牌体验空间INTERSECT</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/brand/brand_pursuits/lexus_short_films">雷克萨斯全球微电影</a>
+                    </dd>
+                </dl>
+            </div>
+            
+            <div class="col-md-2">
+                <dl>
+                    <dt class="cgj-dt">
+                    	<a href="http://www.lexus.com.cn/hybrid">智·混动</a>
+                    </dt>
+                    <dd>
+                      <a href="http://www.lexus.com.cn/hybrid">智·混动</a>
+                    </dd>
+                </dl>
+            </div>
+            
+            <div class="col-md-2">
+                <dl>
+                    <dt class="cgj-dt">
+                    	<a href="http://www.lexus.com.cn/f_portfolio">F高性能系列</a>
+                    </dt>
+                    <dd>
+                      <a href="http://www.lexus.com.cn/f_portfolio">F高性能系列</a>
+                    </dd>
+                </dl>
+            </div>
+            
+            <div class="col-md-2">
+                <dl>
+                    <dt class="cgj-dt">
+                    	<a href="http://www.lexus.com.cn/service">车主服务</a></dt>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/service/lexus_service">售后服务</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/e-LEXUS_CLUB_app">e-LEXUS CLUB<br>智能手机应用</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/service/lexus_g_book">雷克萨斯智能副驾<br>G-BOOK</a>
+                    </dd>
+                     <dd>
+                        <a href="http://www.lexus.com.cn/mobile_connection">雷克萨斯手机互联</a>
+                    </dd> 
+                    <dd>
+                        <a href="http://www.lexus.com.cn/accessories">雷克萨斯汽车精品</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/lexus_collection">雷克萨斯生活精品</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.lexus.com.cn/service_qa">雷克萨斯顾客常见问与答</a>
+                    </dd>
+                </dl>
+            </div>
+            
+            <div class="col-md-2">
+                <dl class="cgj-dt" style="text-align:left;">
+                    <dt style="margin-bottom: 16px;"><a href="http://www.lexus.com.cn/news" ><!-- 新闻&活动 -->新闻资讯</a></dt>
+                    <dd><a href="http://www.lexus.com.cn/news" style="color: #888; font-size: 12px;">新闻资讯</a></dd>
+                    
+                </dl>
+            </div>
+            
+    		</div>
+    	</div>
+    </div>	
+		
+		
+		
+		<div class="container-fluid cgj-foot">
+			<div class="container cgj-fot">
+				<div class="row">
+					<div class="footer-link clearfix cgj-footer">
+                        <ul>
+                            <li>
+                                <a href="http://www.lexus.com.cn/sitemap">网站地图</a>
+                            </li>
+                            <li>
+                                <a href="http://www.lexuscpo.com.cn" target="_blank" class="outLink">认证二手车</a>
+                            </li>
+                            <li>
+                                <a href="http://www.lexus.com.cn/dealer_recruitment">经销商招募</a>
+                            </li>
+                            <li>
+                                <a href="http://www.hotjob.cn/wt/TMCI/web/index" target="_blank" class="outLink">人才招聘</a>
+                            </li>
+                            <li>
+                                <a href="http://www.lexus.com.cn/contact">联系我们</a>
+                            </li>
+                            <li>
+                                <a href="http://www.lexus.com.cn/legal">法律声明</a>
+                            </li>
+                            <li>
+                                <a href="http://www.lexus-global.com/" target="_blank" class="outLink" onclick="ga('send', 'event', 'footer-btn', '按钮点击','底部导航-全球网站');">全球网站</a>
+                            </li>
+                            <li>
+                                <a href="http://repare.lexus-service.cn/" class="outLink" target="_blank">汽车维修技术信息</a>
+                            </li>
+                            <li>
+                                <a href="/vecc_info" class="outLink" target="_blank">环保信息公开</a>
+                            </li>
+                             <li>
+                                <a href="http://www.weibo.com/lexuscn" class="outLink" target="_blank">官方微博</a>
+                            </li>
+                            <li class="no-border">
+                                <div class="qrcode-box1">
+                                            <img src="../img/qrcode.jpg">
+                                            <span class="arrow icon-down4">
+                                            	<img src="../img/箭头 (2).png"/>
+                                            </span>
+                                    </div>
+                                <a href="/sites/all/themes/lexus/images/qrcode.jpg" class="outLink" target="_blank">官方微信</a> 
+                            </li>
+                           
+                        </ul>
+                       
+                    </div>
+                    
+                    <div class="copyright">
+                        <p class="text-center">
+                            © 2005-2018  雷克萨斯中国
+                            <span class="line"></span>
+                                                                                丰田汽车（中国）投资有限公司
+                        </p>
+                        <p class="text-center">
+                            <a href="http://www.miibeian.gov.cn/" target="_blank" class="outLink">京ICP备11010962号</a>
+                            <span class="line"></span>
+                            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502030819" target="_blank" class="outLink">
+                                <span class="beian-icon"></span>
+                                                                                              京公网安备11010502030819
+                            </a>
+                        </p>
+                    </div>
+                    
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="../js/jquery-3.2.1.js"></script>
+		
+		<script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+		<script src="../js/LS.js">
+			
+		</script>
+	</body>
+</html>
